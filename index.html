@@ -27,19 +27,19 @@
             <form action="#">
                 <div class="input-box">
                     <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="email" required>
+                    <input type="email" required id="login">
                     <label>Email</label>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" required>
+                    <input type="password" required id="senha">
                     <label>Senha</label>
                 </div>
                 <div class="remember-forgot">
                     <label><input type="checkbox">Lembrar</label>
                     <a href="#">Esqueci a senha</a>
                 </div>
-                <button type="submit" class="btn">Login</button>
+                <button type="submit" onclick="logar();return false" class="btn">Login</button>
                 <div class="login-register">
                     <p>Não tenho conta<a href="#" class="register-link"><br>Criar</a></p>
                 </div>
@@ -75,7 +75,6 @@
             </form>
         </div>
     </div>
-
 
     <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

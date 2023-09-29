@@ -20,3 +20,16 @@ btnPopup.addEventListener('click',()=> {
 iconClose.addEventListener('click',()=> {
     wrapper.classList.remove('active-popup');
 });
+
+function logar (){
+
+    var login = document.getElementById('login').value;
+    var senha = document.getElementById('senha').value;
+
+    if(login == "admin@gmail.com" && senha == "senha123"){
+        location.href = "tarefas.html";
+    }else{
+        alert('Usuário ou senha incorretos')
+    }
+
+}
